@@ -1,0 +1,33 @@
+﻿@model IEnumerable<DAL.Contact>
+
+@{
+    for (int i = 0; i < 10; i++)
+    {
+        var num = 10;
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div>
+        <a href="/Contact/Create">Add Contact</a>
+    </div>
+  
+    <ul>
+        @foreach (var contact in this.Model)
+        {
+            <li>
+                <span>@contact.Name</span>
+                <span>@contact.EMail</span>
+            </li>
+        }
+    </ul>    
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@model MyModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    @*<link href="~/Site.css" rel="stylesheet" />*@
+</head>
+<body>
+    <div>
+        
+        @Html.ActionLink("Goto Index", "Index")
+         
+        @using (Html.BeginForm())
+        {
+            @Html.EditorFor(m => m.EMail)
+
+            < span > @System.Reflection.Assembly.GetExecutingAssembly().Location </ span >
+            < dir > @ViewData["blabla"] </ dir >
+            @*<span>@this.Model.Name</span>*@
+        }
+    </div>
+</body>
+</html>

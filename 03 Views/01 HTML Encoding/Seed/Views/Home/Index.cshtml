@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+@{
+    //var data = "<script>alert(\"Hello XSS\")</script>";
+
+    var email = "<h1>E-Mail</h1>";
+}
+
+@{
+
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @*<span>@Html.Raw(email)</span>*@
+
+        <!--<div>@Data</div>-->
+    </div>
+</body>
+</html>
