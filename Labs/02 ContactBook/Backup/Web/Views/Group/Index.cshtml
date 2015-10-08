@@ -1,0 +1,35 @@
+﻿@using AddressBook.BL;
+
+@model Group
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{Html.RenderPartial("Menu", this.Model);}
+
+<div class="items">
+    @foreach (BookItem item in this.Model.Items)
+    {
+        <div class="item">
+            <div class="details">
+                @if (item is Group)
+                {
+                    @Html.ActionLink(item.DisplayName, "Index", new { id = item.ID })
+                }
+                else
+                {
+                    @: @item.DisplayName
+                }
+            </div>
+
+            <div class="actions">
+                @if (item is Group)
+                {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+                }
+                @Html.ActionLink("Delete", "ConfirmDelete", new { id = item.ID })
+            </div>
+        </div>
+    }
+</div>

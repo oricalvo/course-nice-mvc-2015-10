@@ -1,0 +1,255 @@
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* AddressBook styles
+-----------------------------------------------------------*/
+body
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Segoe UI",Tahoma,Verdana,Arial;
+    color: #2a2a2a;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.itemTitle
+{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: rgb(0, 100, 255);
+    font-weight: bold;
+}
+
+.items .item a
+{
+    text-decoration: none;
+}
+
+.items .item
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    overflow: hidden;
+}
+
+.items .item .details
+{
+	float: left;
+}
+
+.items .item .actions
+{
+	display: none;
+	float: right;
+}
+
+.items .itemParent
+{
+    font-size: 1em;
+}
+
+.items .itemParent .description
+{
+    width: 100px;
+}
+
+.items .item:hover
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: rgb(220, 220, 255);
+    border-style: solid;
+    border-color: rgb(120, 120, 255);
+    border-width: 1px;
+}
+
+.items .item:hover .actions
+{
+	display: inline;
+	float: right;
+}
+
+.items .item a:hover
+{
+    text-decoration: underline;
+}
+
+.items .item:hover .actions a
+{
+	text-decoration: underline;
+}
+
+.items .item:hover .actions a:hover
+{
+	color: Red;
+}
+
+/*a:visited
+{
+    text-decoration: none;
+    color: Black;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: Black;
+}*/
+
+input[type="submit"] 
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-width: 1px;
+}
+
+input[type="button"] 
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-width: 1px;
+}
+
+input[type="text"] 
+{
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    border: 1px solid #CCC;
+}
+
+.menu
+{
+    margin-bottom: 15px;
+}
+
+.menu a
+{
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.menu a:hover
+{
+    text-decoration: underline;
+    color: Red;
+}
+
+.header .title
+{
+    font-size: 300%;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.header .signout
+{
+    font-size: 100%;
+    float: right;
+}
+
+.footer
+{
+    font-size: 75%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.confirmation
+{
+	color: Red;
+	font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.display-label, .editor-label
+{
+    color: Green;
+    font-weight: bold;
+}
+
+.display-field, .editor-field
+{
+    margin-bottom: 20px;
+}
+
+.login
+{
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 5px 5px 5px;
+}

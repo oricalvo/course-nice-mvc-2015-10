@@ -1,0 +1,13 @@
+﻿
+@if (this.ViewBag.IsAuthenticated)
+{
+    <div class="header">
+        <div class="title">
+            Address Book
+        </div>
+
+        <div class="signout">
+            @Html.ActionLink("Logout", "Logout", "Account")
+        </div>
+    </div>
+}

@@ -1,0 +1,17 @@
+﻿@using AddressBook.BL;
+
+@model BookItem
+
+@{
+    ViewBag.Title = "ConfirmDelete";
+}
+
+@{Html.RenderPartial("Menu", this.Model);}
+
+<div class="confirmation">
+    Are you sure you want to delete the item "@this.Model.DisplayName"?
+</div>
+
+<form action="@Url.Action("Delete", "Group", new { id = this.Model.ID })" method="post">
+    <input type="submit" value="Delete" />
+</form>

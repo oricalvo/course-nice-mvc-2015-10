@@ -1,0 +1,14 @@
+﻿@model AddressBook.BL.Group
+
+<div class="menu">
+    @if (this.Model.Parent != null)
+    {
+        @Html.ActionLink("Back to parent", "Index", new { id = this.Model.Parent.ID })
+    }
+    
+    @if (ViewBag.AllowAddGroup == null || (bool)ViewBag.AllowAddGroup)
+    {
+        @Html.ActionLink("Add group", "New", new { parentId = this.Model.ID })
+    }
+    <hr />
+</div>

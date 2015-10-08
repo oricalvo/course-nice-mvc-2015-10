@@ -1,0 +1,24 @@
+﻿@using AddressBook.BL;
+
+@model Group
+
+@{
+    Html.RenderPartial( 
+        "Menu", 
+        this.Model, 
+        new ViewDataDictionary() {
+            {"AllowAddGroup", false}
+        });}
+
+@using (Html.BeginForm("New", "Group", new { parentId = this.Model.Parent.ID }))
+{
+    @Html.LabelFor(m => m.Name)<br />
+    <div class="editor-field">
+        @Html.EditorFor(m => m.Name)
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+    
+    <p>
+        <input type="submit" value="Add" />
+    </p>
+}
